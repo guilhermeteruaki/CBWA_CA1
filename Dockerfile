@@ -17,7 +17,7 @@ WORKDIR /busybox
 # Copy the busybox build config (limited to httpd)
 COPY .config .
 
-# Compile and install busybox 
+# Compile and install busybox
 RUN make && make install
 
 # Create a new user to run the website
@@ -45,8 +45,8 @@ WORKDIR /home/static
 COPY httpd.conf .
 
 # Copy the static website
-RUN wget https://github.com/guilhermeteruaki/webdev_ca2/archive/refs/heads/main.zip
-RUN unzip main.zip
+RUN wget https://github.com/guilhermeteruaki/webdev_ca2/archive/refs/heads/main.tar.bz2 \
+   && tar xf main.tar.bz2 
 
 # Run busybox httpd
 CMD ["/busybox", "httpd", "-f", "-v", "-p", "8080", "-c", "./index.html"]
