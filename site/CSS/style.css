@@ -1,0 +1,52 @@
+
+
+h1 {
+    color:blue;
+    font-size: 35px;
+    outline-color: black;
+    }
+
+h2 {
+    font-size: 20px;
+}
+
+ul {
+    margin: 15px;
+    padding: 15px;
+    list-style-type: square;
+}
+li{
+    font-weight: bold;
+}
+
+#authorinfo{
+    color: black;
+    bottom: 0;
+    font-size: 10px;
+    right: 0;
+    position: absolute;
+}
+
+#key, #key2{
+    width: 10px;
+    height: 10px;
+}
+
+thead{
+    font-weight: bold;
+    color: black;
+
+}
+table{
+    border: solid;
+    color: black;
+}
+
+td{
+    border: 1px solid;
+    color: black;
+}
+
+html{
+    background-color:bisque ;
+}

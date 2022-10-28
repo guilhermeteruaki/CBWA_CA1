@@ -45,8 +45,8 @@ WORKDIR /home/static
 COPY httpd.conf .
 
 # Copy the static website
-ADD https://github.com/guilhermeteruaki/webdev_ca2/archive/refs/heads/main.tar.gz .
-
+#ADD https://github.com/guilhermeteruaki/webdev_ca2/archive/refs/heads/main.tar.gz .
+COPY site .
 
 # Run busybox httpd
 
