@@ -50,4 +50,4 @@ ADD https://github.com/guilhermeteruaki/webdev_ca2/archive/refs/heads/main.tar.g
 
 # Run busybox httpd
 
-CMD ["/busybox", "httpd", "-f", "-v", "-p", "8080", "-c", "index.html"]
+CMD ["/busybox", "httpd", "-f", "-v", "-p", "8080", "-c", "httpd.conf", "./index.html"]
